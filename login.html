@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Login Form: Easy Tutorials Hindi</title>  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="login.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+</head>
+<body>
+
+<div class="form-box">
+    
+    <h2>Sign in</h2>
+    <form>
+        <div class="input-group">
+            <label>Username</label>
+            <input type="text">
+        </div>
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password">
+        </div>
+        <div>
+            
+            <input class="checkbox" type="checkbox">  Remember me
+            
+        </div>
+        
+        <button class="popup" type="submit" onclick="openPopup()" >Log in</button>
+        
+    </form>  
+    <p>Login in with google account</p>
+    <div class="social">
+        <img src="facebook.png">
+        
+        <img src="google.png">
+    </div>
+    
+</div>
+
+
+    <script>
+let popup = document.getElementById("popup");
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
+    </script>
+   
+</body>
+</html>
